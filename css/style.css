@@ -1,0 +1,92 @@
+.main-home .div-logo {
+  background-color: #faecc9;
+  grid-area: logo;
+  width: 200vh;
+  height: 15.4rem;
+  opacity: 0.96; }
+
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../img/fondoladolce.png"); }
+  body header {
+    height: 3.8rem;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #faecc9; }
+    body header .navbar .container-fluid {
+      display: flex;
+      justify-content: center; }
+      body header .navbar .container-fluid .navbar-toggler {
+        color: #aa8040; }
+      body header .navbar .container-fluid .navbar-elementos {
+        display: flex;
+        justify-content: center; }
+        body header .navbar .container-fluid .navbar-elementos .navbar-nav {
+          gap: 4rem; }
+          body header .navbar .container-fluid .navbar-elementos .navbar-nav .nav-item .nav-link {
+            color: #ebb582;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 1rem; }
+          body header .navbar .container-fluid .navbar-elementos .navbar-nav .nav-item .nav-link:hover {
+            color: #aa8040; }
+          body header .navbar .container-fluid .navbar-elementos .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+            font-size: 2rem;
+            font-family: "Josefin Sans", sans-serif;
+            color: #aa8040; }
+
+.main-home {
+  height: 30.7rem;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "logo logo" "carthome carthome" "titulos titulos"; }
+  .main-home .div-logo .logo {
+    display: flex;
+    justify-content: center;
+    height: 15rem; }
+  .main-home .cartas-home {
+    width: 200vh;
+    margin: 1.6rem;
+    grid-area: carthome;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "car1 car2 car3 car4"; }
+    .main-home .cartas-home .card .card-body .card-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #f39336; }
+    .main-home .cartas-home .card .card-body .card-text {
+      font-family: "Josefin Sans", sans-serif;
+      color: #aa8040; }
+    .main-home .cartas-home .card .card-body .btn {
+      border-color: #faecc9;
+      background-color: #d94f50;
+      color: #faecc9; }
+    .main-home .cartas-home .carta1-home {
+      grid-area: car1; }
+    .main-home .cartas-home .carta2-home {
+      grid-area: car2; }
+    .main-home .cartas-home .carta3-home {
+      grid-area: car3; }
+    .main-home .cartas-home .carta4-home {
+      grid-area: car4; }
+  .main-home .titulos-home {
+    margin: 8rem;
+    padding: 1rem;
+    grid-area: titulos;
+    text-align: center;
+    background-color: #faecc9;
+    width: 75rem;
+    opacity: 0.9;
+    border-style: solid;
+    border-color: #aa8040;
+    border-width: 3px; }
+    .main-home .titulos-home .titulos-texto {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 5.7rem;
+      color: #aa8040;
+      margin: 1.5rem; }

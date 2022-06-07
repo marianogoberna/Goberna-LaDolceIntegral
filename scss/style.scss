@@ -1,0 +1,172 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/extend";
+
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/fondoladolce.png");
+
+    header{
+        height: 3.8rem;
+        background-color: $color6;
+        border-style: solid;
+        border-width: 5px;
+        border-color: $color5;
+
+       
+
+        .navbar{
+
+            .container-fluid{
+                @include center;
+
+                .navbar-toggler{
+                    color: $color1;
+                }
+
+                .navbar-elementos{
+                    @include center
+    
+                    .navbar-nav{
+                        gap: 4rem;
+    
+                        .nav-item{
+    
+                            .nav-link{
+                                color: $color3;
+                                font-family: $fuente2;
+                                font-size: 1rem;
+                            }
+    
+                            .nav-link:hover{
+                                color: $color1;
+                            }
+    
+                            .dropdown-menu{
+                                .dropdown-item{
+                                    font-size: 2rem;
+                                    font-family: $fuente2;
+                                    color: $color1;
+                                }
+    
+                            }
+                        }
+                    }
+    
+                }
+
+            }    
+
+            
+                
+
+            
+        }
+ 
+    }
+}
+
+
+
+.main-home{
+    height: 30.7rem;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: "logo logo"
+                         "carthome carthome"
+                         "titulos titulos";
+
+    
+    .div-logo{
+        @extend %logo;
+        .logo{
+            @include center;
+            height: 15rem;
+        }
+
+    }                     
+
+    .cartas-home{
+        width: 200vh;
+        margin: 1.6rem;
+        grid-area: carthome;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "car1 car2 car3 car4";
+
+        .card{
+            .card-body{
+                .card-title{
+                    font-family: $fuente2;
+                    color: $color4;
+                    
+                }
+
+                .card-text{
+                    font-family: $fuente2;
+                    color: $color1;
+                }
+
+                .btn{
+                    border-color: $color5;
+                    background-color: $color2;
+                    color: $color5;
+                }
+            }
+        }
+
+        .carta1-home{
+            grid-area: car1;
+        }
+
+        .carta2-home{
+            grid-area: car2;
+        }
+
+        .carta3-home{
+            grid-area: car3;
+        }
+
+        .carta4-home{
+            grid-area: car4;
+        }
+    }
+
+    .titulos-home{
+        margin: 8rem;
+        padding: 1rem;
+        grid-area: titulos;
+        text-align: center;
+        background-color: $color5;
+        width: 75rem;
+        opacity: 0.9;
+        border-style: solid;
+        border-color: $color1;
+        border-width: 3px;
+
+
+
+        .titulos-texto{
+            font-family: $fuente2;
+            font-size: 5.7rem;
+            color: $color1; 
+            margin: 1.5rem;
+
+        }
+    }
+
+    
+}
+
+
+
+
+
+
+
