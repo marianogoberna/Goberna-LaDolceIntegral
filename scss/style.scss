@@ -11,6 +11,55 @@
 body{
     background-image: url("../img/fondoladolce.png");
 
+    main{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .fotocarru1{
+                        height: 38rem;
+                    }
+                    .fotocarru2{
+                        height: 38rem;
+                    }
+                    .fotocarru3{
+                        height: 38rem;
+                    }
+                }
+            }
+        }
+
+        .contactos-form{
+            background-color: $color5;
+            height: 38rem;
+            opacity: 0.9;
+            .contactos-div{
+                .form-label{
+                    font-family: $fuente2;
+                    color: $color1;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .div-productos{
+            background-color: $color5;
+            opacity: 0.9;
+            padding: 2rem;
+            text-align: center;
+            .h1-productos{
+                color: $color4;
+                height: 5rem;
+                font-family: $fuente2;
+                font-size: 3rem;
+            }
+            .p-productos{
+                color: $color1;
+                font-family: $fuente2;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
     header{
         height: 3.8rem;
         background-color: $color6;
@@ -69,100 +118,180 @@ body{
         }
  
     }
-}
-
-
-
-.main-home{
-    height: 30.7rem;
-    display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-rows:1fr 1fr;
-    grid-template-areas: "logo logo"
-                         "carthome carthome"
-                         "titulos titulos";
-
-    
-    .div-logo{
-        @extend %logo;
-        .logo{
-            @include center;
-            height: 15rem;
-        }
-
-    }                     
-
-    .cartas-home{
-        width: 200vh;
-        margin: 1.6rem;
-        grid-area: carthome;
+    .main-home{
+        height: 81.5rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "car1 car2 car3 car4";
-
-        .card{
-            .card-body{
-                .card-title{
-                    font-family: $fuente2;
-                    color: $color4;
-                    
-                }
-
-                .card-text{
-                    font-family: $fuente2;
-                    color: $color1;
-                }
-
-                .btn{
-                    border-color: $color5;
-                    background-color: $color2;
-                    color: $color5;
+        grid-template-rows:13% 35% auto;
+        grid-template-areas: "logo logo"
+                             "carthome carthome"
+                             "titulos titulos";
+    
+        
+        .div-logo{
+            @extend %logo;
+            .logo{
+                @include center;
+                height: 10rem;
+            }
+    
+        }                     
+    
+        .cartas-home{
+            width: 100%;
+            grid-area: carthome;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "car1 car2 car3 car4";
+    
+            .card{
+                .card-body{
+                    .card-title{
+                        font-family: $fuente2;
+                        color: $color4;
+                        
+                    }
+    
+                    .card-text{
+                        font-family: $fuente2;
+                        color: $color1;
+                    }
+    
+                    .btn{
+                        border-color: $color5;
+                        background-color: $color2;
+                        color: $color5;
+                    }
                 }
             }
-        }
-
-        .carta1-home{
-            grid-area: car1;
-        }
-
-        .carta2-home{
-            grid-area: car2;
-        }
-
-        .carta3-home{
-            grid-area: car3;
-        }
-
-        .carta4-home{
-            grid-area: car4;
-        }
-    }
-
-    .titulos-home{
-        margin: 8rem;
-        padding: 1rem;
-        grid-area: titulos;
-        text-align: center;
-        background-color: $color5;
-        width: 75rem;
-        opacity: 0.9;
-        border-style: solid;
-        border-color: $color1;
-        border-width: 3px;
-
-
-
-        .titulos-texto{
-            font-family: $fuente2;
-            font-size: 5.7rem;
-            color: $color1; 
-            margin: 1.5rem;
-
-        }
-    }
-
     
+            .carta1-home{
+                grid-area: car1;
+            }
+    
+            .carta2-home{
+                grid-area: car2;
+            }
+    
+            .carta3-home{
+                grid-area: car3;
+            }
+    
+            .carta4-home{
+                grid-area: car4;
+            }
+        }
+    
+        .titulos-home{
+            height: 30rem;
+            padding: 1rem;
+            margin-top: 6rem;
+            grid-area: titulos;
+            text-align: center;
+            background-color: $color5;
+            width: 100%;
+            opacity: 0.9;
+            border-style: solid;
+            border-color: $color1;
+            border-width: 3px;
+    
+    
+    
+            .titulos-texto{
+                font-family: $fuente2;
+                font-size: 5.7rem;
+                color: $color1; 
+                margin: 1.5rem;
+    
+            }
+        }
+    
+        
+    }
+
+
+
+    footer{
+        height: 4.5rem;
+        background-color: $color6;
+        border-style: solid;
+        border-width: 5px;
+        border-color: $color5;
+        @include center;
+        @include align;
+        gap: 2rem;
+        .link-footer{
+            color: $color1;
+            font-size: 2rem;
+            font-family: $fuente2;
+
+        }
+        .ig-logo{
+            height: 2.5rem;
+        }
+    }
 }
+
+@media screen and (max-width: 840px) {
+
+    body{
+        .main-home{
+            height: 75.5rem;
+            display: grid;
+            grid-template-rows:13% 65% auto;
+            grid-template-areas: "logo logo"
+                                 "carthome carthome"
+                                 "titulos titulos";
+
+            .titulos-home{
+                display: none;
+            }
+
+            .cartas-home{
+                margin: 1.6rem;
+                grid-area: carthome;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "car1 car2"
+                                     "car3 car4";
+            }    
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        .main-home{
+            height: 89.5rem;
+            display: grid;
+            grid-template-rows:13% auto;
+            grid-template-areas: "logo logo"
+                                 "carthome carthome";
+
+            .titulos-home{
+                display: none;
+            }
+
+            .cartas-home{
+                margin: 1.6rem;
+                grid-area: carthome;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas: "car1"
+                                     "car2"
+                                     "car3"
+                                     "car4";
+            }    
+        }
+    }
+
+}
+
+
+
+
 
 
 

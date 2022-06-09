@@ -5,6 +5,16 @@
     justify-content: space-around;
 }
 
+@mixin evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin between{
+    display: flex;
+    justify-content: space-between;
+}
+
 @mixin center{
     display: flex;
     justify-content: center;
@@ -18,4 +28,9 @@
 @mixin end{
     display: flex;
     justify-content: flex-end;
+}
+
+@mixin align{
+    display: flex;
+    align-items: center;
 }
