@@ -70,6 +70,7 @@ body{
        
 
         .navbar{
+            z-index: 1;
 
             .container-fluid{
                 @include center;
@@ -229,6 +230,18 @@ body{
             height: 2.5rem;
         }
     }
+
+    .section-nosotros{
+        background-color: $color5;
+        padding: 2rem;
+
+        .p-nosotros{
+            font-family: $fuente2;
+            color: $color1;
+            font-size: 3rem;
+        }
+    }
+
 }
 
 @media screen and (max-width: 840px) {
